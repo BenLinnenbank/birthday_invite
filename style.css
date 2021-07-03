@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    z-index: 0;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    animation: sky 10s ease-in forwards;
+}
+
+h1 {
+    z-index: 9;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+@keyframes sky {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.background-air {
+    height: 30%;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.background-ground {
+    height: 70%;
+    width: 100%;
+    background-color: green;
+}
+svg {
+    width: 100%;
+}
+
+#girl-with-baloons {
+    z-index: 10;
+    position: absolute;
+
+    bottom: 0;
+}
+
+#girl {
+    animation: sky 10s ease-in forwards;
+}
+
+#orange-baloon {
+    z-index: 10;
+    animation: orange-baloon 20s ease-in-out forwards;
+}
+
+#red-baloon {
+    z-index: 10;
+    animation: red-baloon 20s ease-in-out forwards;
+}
+
+#blue-baloon {
+    z-index: 10;
+    animation: blue-baloon 20s ease-in-out forwards;
+}
+
+#pink-green-baloon {
+    z-index: 10;
+    animation: pink-green-baloon 20s ease-in-out forwards;
+}
+
+#pink-baloon {
+    z-index: 10;
+    animation: pink-baloon 20s ease-in-out forwards;
+}
+
+@keyframes orange-baloon {
+    0% {
+        transform: translateY(0) translateX(0) scale(1.0);
+    }
+    100% {
+        transform: translateY(-100px) translateX(-500px) scale(1.2);
+    }
+}
+@keyframes red-baloon {
+    0% {
+        transform: translateY(0) translateX(0) scale(1.0);
+    }
+    100% {
+        transform: translateY(-50px) translateX(400px) scale(0.9);
+    }
+}
+@keyframes blue-baloon {
+    0% {
+        transform: translateY(0) translateX(0) scale(1.0);
+    }
+    100% {
+        transform: translateY(80px) translateX(-150px) scale(1.1);
+    }
+}
+@keyframes pink-green-baloon {
+    0% {
+        transform: translateY(0) translateX(0) scale(1.0);
+    }
+    100% {
+        transform: translateY(300px) translateX(150px) scale(0.8);
+    }
+}
+@keyframes pink-baloon {
+    0% {
+        transform: translateY(0) translateX(0) scale(1.0);
+    }
+    100% {
+        transform: translateY(100px) translateX(-500px) scale(1.2);
+    }
+}
+
+.cloud1 {
+    z-index: 11;
+    position: absolute;
+    animation: cloudOne 20s linear infinite;
+}
+
+@keyframes cloudOne {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(180vh);
+    }
+}
+
+.cloud2 {
+    z-index: 9;
+    position: absolute;
+    animation: cloudTwo 25s linear infinite;
+}
+
+@keyframes cloudTwo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(180vh);
+    }
+}
+
+.cloud3 {
+    z-index: 9;
+    position: absolute;
+    animation: cloudThree 23s linear infinite;
+}
+
+@keyframes cloudThree {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(180vh);
+    }
+}
